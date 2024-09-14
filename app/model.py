@@ -1,4 +1,3 @@
-
 import fasttext
 from huggingface_hub import hf_hub_download
 from tqdm import tqdm
@@ -26,7 +25,7 @@ def run_benchmark_test():
 
     correct_predictions = 0
     for text, label in tqdm(zip(input_texts, output_labels), desc="Running benchmark test"):
-        predicted_language = detect_language(text)
+        predicted_language = detect_language(text.strip())
         label_parsed = label.strip().split("-")[0]
         min_num_chars = min(len(predicted_language), len(label_parsed))
         if predicted_language[:min_num_chars] == label_parsed[:min_num_chars]:

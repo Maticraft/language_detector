@@ -17,6 +17,9 @@ def detect(text: str):
 
 @app.get("/benchmark/")
 def benchmark():
+    '''
+    Run benchmark test to evaluate the model's accuracy. It tests model accuracy on Willi-2018 dataset composed of text samples in 235 languages.
+    '''
     try:
         accuracy = run_benchmark_test()
     except Exception as e:
