@@ -1,0 +1,6 @@
+numpy < 2.0.0
+fasttext
+huggingface_hub
+fastapi
+uvicorn
+tqdm
