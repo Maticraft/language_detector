@@ -8,6 +8,9 @@ app = FastAPI()
 
 @app.post("/detect/")
 def detect(text: str):
+    '''
+    Detect the language of the input text.
+    '''
     try:
         predicted_language = detect_language(text)
     except Exception as e:

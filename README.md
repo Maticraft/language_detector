@@ -7,7 +7,7 @@ To run the service, execute the following command:
 ```
 docker-compose up
 ```
-Service will be available at http://localhost:8000/
+Service will be available at http://localhost:8000/, and the documentation at http://localhost:8000/docs.
 To detect language of given text, send POST request to http://localhost:8000/detect with JSON body:
 ```
 {
