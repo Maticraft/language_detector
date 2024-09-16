@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 from fastapi import FastAPI, HTTPException
 
 from app.model import detect_language, run_benchmark_test
