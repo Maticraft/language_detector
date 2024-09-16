@@ -22,4 +22,4 @@ The response will be JSON with detected language:
 }
 ```
 To run the benchmark test on the Wili-2018 dataset, execute the following command:
-send GET request to http://localhost:8000/benchmark
+send GET request to http://localhost:8000/benchmark to run full benchmark or to http://localhost:8000/benchmark/{languages_subset} to run the test on the given subset of languages.
