@@ -9,7 +9,9 @@ def download_model() -> fasttext.FastText._FastText:
 
     return fasttext.load_model(model_path)
 
+
 model = download_model()
+
 
 def detect_language(text: str) -> str:
     prediction = model.predict(text)
@@ -37,6 +39,7 @@ def run_benchmark_test(languages_subset: Optional[List[str]] = None) -> float:
 
     accuracy = correct_predictions / total_predictions
     return accuracy
+
 
 def is_prediction_correct(text: str, label: str) -> bool:
     predicted_language = detect_language(text.strip())
