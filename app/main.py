@@ -23,7 +23,7 @@ def detect(text: str):
 @app.get("/benchmark/")
 def benchmark():
     '''
-    Run benchmark test to evaluate the model's accuracy. It tests model accuracy on Willi-2018 dataset composed of text samples in 235 languages.
+    Run benchmark test to evaluate the model's accuracy. It tests model accuracy on Willi-2018 dataset composed of text samples in 235 languages. It may take a few minutes to complete.
 
     '''
     try:
